@@ -24,4 +24,5 @@ public interface ProfileMapper {
 
     @Mapping(target = "contacts", nullValuePropertyMappingStrategy = NullValuePropertyMappingStrategy.SET_TO_DEFAULT)
     ProfileTo fromPostToTo(ProfilePostRequest profilePostRequest);
+
 }
