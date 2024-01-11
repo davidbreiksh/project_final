@@ -26,4 +26,6 @@ public interface UserRepository extends BaseRepository<User> {
     default User getExistedByEmail(String email) {
         return findByEmailIgnoreCase(email).orElseThrow(() -> new NotFoundException("User with email=" + email + " not found"));
     }
+
+
 }
